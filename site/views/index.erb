@@ -1,0 +1,7 @@
+<%= partial "/layouts/partials/login" %>
+<h1>Hello</h1>
+<% if logged_in? %>
+  <%= partial "/ego/accounts_panel" %>
+<% else %>
+  <%= partial "/misc/join" %>
+<% end %>

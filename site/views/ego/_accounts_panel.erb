@@ -1,0 +1,10 @@
+<h2>Your Accounts</h2>
+<h3>Twitter</h3>
+<%= partial "/account/index", :locals => {:accounts => current_ego.accounts_for("twitter")} %>
+<a href="/login/twitter">Add a Twitter Account</a>
+<h3>Facebook</h3>
+<%= partial "/account/index", :locals => {:accounts => current_ego.accounts_for("facebook")} %>
+<a href="/login/twitter">Add a Facebook Account</a>
+<h3>GMail</h3>
+<%= partial "/account/index", :locals => {:accounts => current_ego.accounts_for("gmail")} %>
+<a href="/login/twitter">Add a GMail Account</a>

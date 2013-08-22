@@ -1,0 +1,1 @@
+Ego.ensure_index(:screen_name, :unique => true)

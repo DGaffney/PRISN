@@ -1,0 +1,40 @@
+GEM
+  specs:
+    addressable (2.3.5)
+    faraday (0.8.8)
+      multipart-post (~> 1.2.0)
+    gmail (0.4.0)
+      gmail_xoauth (>= 0.3.0)
+      mail (>= 2.2.1)
+      mime (>= 0.1)
+    gmail_xoauth (0.4.1)
+      oauth (>= 0.3.6)
+    koala (1.7.0rc1)
+      addressable
+      faraday
+      multi_json
+    mail (2.5.4)
+      mime-types (~> 1.16)
+      treetop (~> 1.4.8)
+    mime (0.1)
+    mime-types (1.23)
+    multi_json (1.7.7)
+    multipart-post (1.2.0)
+    oauth (0.4.7)
+    polyglot (0.3.3)
+    simple_oauth (0.2.0)
+    treetop (1.4.14)
+      polyglot
+      polyglot (>= 0.3.1)
+    twitter (4.6.2)
+      faraday (~> 0.8, < 0.10)
+      multi_json (~> 1.0)
+      simple_oauth (~> 0.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  gmail
+  koala (~> 1.7.0rc1)
+  twitter

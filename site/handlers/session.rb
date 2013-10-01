@@ -3,6 +3,10 @@ get "/signup" do
 end
 
 post "/signup" do
+  if Ego.first(:screen_name => params[:screen_name])
+    flash[:error] = "Sorry, but someone else already has this account. Have you forgot your password?"
+    redirect "/signup" 
+  end
   if params[:password] != params[:check_password]
     flash[:error] = "Sorry, but you're passwords didn't match. Please try again!"
     redirect "/signup" 

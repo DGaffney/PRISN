@@ -5,6 +5,12 @@ get "/login/:domain" do
 end
 
 get "/callback/:domain" do
+  account = Account.create_account_for(params[:domain], (params[:domain]+"_login").classify.constantize.get_credentials(params, session), current_ego.id)
+  redirect request.referer
+end
+
+post "/callback/:domain" do
   binding.pry
-  (params[:domain]+"_login").classify.constantize.get_credentials(params, session)
+  account = Account.create_account_for(params[:domain], (params[:domain]+"_login").classify.constantize.get_credentials(params, session), current_ego.id)
+  redirect request.referer
 end

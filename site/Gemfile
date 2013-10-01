@@ -5,9 +5,14 @@ gem 'mongo_mapper', '~> 0.12.0'
 gem 'bson_ext', '~> 1.8.2'
 gem 'hashie'
 gem "sinatra"
-gem "tux"
-gem "oauth"
 gem 'tux'
 gem 'oauth'
 gem 'bcrypt-ruby', '~> 3.0.1'
 gem "sinatra-flash", "~> 0.3.0"
+gem "koala"
+gem "rack-ssl-enforcer", "~> 0.2.5"
+gem "thin"
+gem "oauth2"
+gem "gmail_xoauth"
+gem "mail"
+gem "passenger"
